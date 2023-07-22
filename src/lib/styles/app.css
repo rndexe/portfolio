@@ -1,0 +1,58 @@
+@import "./preflight.css";
+@import "@fontsource/ibm-plex-mono";
+@import "@fontsource-variable/inter-tight";
+
+:root {
+    --font-mono: "IBM Plex Mono", monospace;
+    --font-inter: "Inter Tight Variable", sans-serif;
+    --bg-color: #f5f5f4;
+    --color-theme-2: #4075a6;
+    --color-text: #1c1917;
+    --scrollbar-w: 8px;
+    --size-h1: clamp(2.07rem, calc(1.48rem + 2.99vw), 5.06rem);
+    --size-h2: clamp(1.44rem, calc(1.28rem + 0.81vw), 2.25rem);;
+    --size-h3: clamp(1.20rem, calc(1.14rem + 0.30vw), 1.50rem);
+
+
+}
+
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 var(--scrollbar-w) rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar {
+    width: var(--scrollbar-w);
+    background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+}
+
+body {
+    font-family: var(--font-mono);
+    background-color: var(--bg-color);
+    color: var(--color-text);
+    min-height: 100vh;
+}
+
+.test-red {
+    border-width: 1px;
+    border-color: red;
+}
+
+.test-blue {
+    border-width: 1px;
+    border-color: blue;
+}
+
+.test-yellow {
+    border-width: 1px;
+    border-color: yellowgreen;
+}

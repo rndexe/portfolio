@@ -1,5 +1,27 @@
 <script>
     import { page } from "$app/stores";
+    import { afterNavigate } from "$app/navigation";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const active_menu = document.getElementById("highlight");
+
+        const pos = document.querySelector("[aria-current]").getBoundingClientRect();
+        active_menu.style.top = pos.top + "px";
+        active_menu.style.left = pos.left + "px";
+        active_menu.style.width = pos.width + "px";
+        active_menu.style.height = pos.height + "px";
+    });
+
+    afterNavigate(() => {
+        const active_menu = document.getElementById("highlight");
+
+        const pos = document.querySelector("[aria-current]").getBoundingClientRect();
+        active_menu.style.top = pos.top + "px";
+        active_menu.style.left = pos.left + "px";
+        active_menu.style.width = pos.width + "px";
+        active_menu.style.height = pos.height + "px";
+    });
 </script>
 
 <header>
@@ -11,9 +33,11 @@
             <li aria-current={$page.url.pathname === "/works" ? "page" : undefined} class="menu-item">
                 <a href="/works">Work</a>
             </li>
+            <!--
             <li aria-current={$page.url.pathname === "/play" ? "page" : undefined} class="menu-item">
                 <a href="/play">Play</a>
-            </li>
+            </li>-->
+            <div id="highlight"/>
         </ul>
     </nav>
 </header>
@@ -39,6 +63,13 @@
         padding-inline: 0.5rem;
     }
     li[aria-current="page"] {
+        background-color: transparent;
+    }
+
+    #highlight {
+        position: absolute;
         background-color: #91e6d4;
+        z-index: -1;
+        transition: all 0.5s ease-out;
     }
 </style>

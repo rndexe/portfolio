@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>home | rnd.exe</title>
+    <title>Home</title>
 </svelte:head>
 
 <div class="intro-wrapper">

@@ -40,7 +40,7 @@
 </script>
 
 <svelte:head>
-    <title>works | rnd.exe</title>
+    <title>Works</title>
 </svelte:head>
 
 <div class="work-grid">

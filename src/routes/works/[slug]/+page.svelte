@@ -3,6 +3,10 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>{prismic.asText(data.work.title)}</title>
+</svelte:head>
+
 <article>
     <h1>{prismic.asText(data.work.title)}</h1>
     <p>

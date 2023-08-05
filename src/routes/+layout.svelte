@@ -5,6 +5,9 @@
 </script>
 
 <svelte:head>
+    <!-- Preconnect to Prismic raster image CDN (png, jpg, etc.) -->
+    <link rel="preconnect" href="https://images.prismic.io" crossorigin />
+    <link rel="dns-prefetch" href="https://images.prismic.io" />
     <MetaTags />
 </svelte:head>
 

@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>{prismic.asText(data.work.title)}</title>
+    <title>{prismic.asText(data.work.title)} | Works | Himanshu Erande </title>
 </svelte:head>
 
 <article>

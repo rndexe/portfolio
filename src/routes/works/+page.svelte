@@ -40,7 +40,7 @@
 </script>
 
 <svelte:head>
-    <title>Works</title>
+    <title>Works | Himanshu Erande</title>
 </svelte:head>
 
 <div class="work-grid">

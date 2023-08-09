@@ -1,5 +1,15 @@
+<script>
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const encEmail = "aGltYW5zaHUuZXJuZGUrd2Vic2l0ZUBnbWFpbC5jb20=";
+        const form = document.getElementById("contact");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    });
+</script>
+
 <svelte:head>
-    <title>Home</title>
+    <title>Home | Himanshu Erande</title>
 </svelte:head>
 
 <div class="intro-wrapper">
@@ -9,7 +19,7 @@
         a little bit of everything in between.
     </p>
     <p>
-        Contact me on : <a class="underline" href="mailto:himanshu.ernde@gmail.com" target="_blank">Email</a> or
+        Contact me on : <a id="contact" class="underline" href="" target="_blank">Email</a> or
         <a class="underline" href="https://www.instagram.com/rnd.exe/" target="_blank">Instagram</a>
     </p>
 </div>

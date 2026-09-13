@@ -15,7 +15,7 @@
 <div class="intro-wrapper">
     <p>Hello, my name is <span class="text-teal">Himanshu.</span></p>
     <p>
-        Contact me on : <a id="contact" class="underline" href="" target="_blank">Email</a>
+        Contact me through <a id="contact" class="underline" href="" target="_blank">Email</a>
     </p>
 </div>
 

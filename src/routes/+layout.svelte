@@ -12,7 +12,6 @@
 </svelte:head>
 
 <div class="app">
-    <Header />
     <main>
         <slot />
     </main>
